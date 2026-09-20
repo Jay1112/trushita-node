@@ -1,7 +1,8 @@
-require("dotenv").config();
-const express = require("express");
-const cors = require("cors");
-const { createClient } = require("@sanity/client");
+import dotenv from "dotenv";
+dotenv.config();
+import express from "express";
+import cors from "cors";
+import { createClient } from "@sanity/client";
 
 const app = express();
 app.use(cors());
